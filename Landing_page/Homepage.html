@@ -28,8 +28,8 @@
 
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg shadow-5-strong fixed-top " style="backdrop-filter: blur(10px);-webkit-backdrop-filter: blur(10px);background-color:rgba(255,255,255, 0.6);padding:10px;margin-top:10px;margin-right:15px;margin-left:15px;border-radius:20px;  -webkit-transition: 0.4s;box-shadow: 0 5px 20px rgba(0,0,0,0.60); transition: 0.4s; transform: translateZ(0); padding:0;">
-                    <a class="navbar-brand" href="#" style="color:rgb(53, 73, 142); letter-spacing: 1.4px;
+        <nav class="navbar navbar-expand-lg shadow-5-strong fixed-top " id="navblur" style="backdrop-filter: blur(10px);-webkit-backdrop-filter: blur(10px);background-color:rgba(0,0,0, 0.01);padding:10px;margin-top:10px;margin-right:15px;margin-left:15px;border-radius:20px;  -webkit-transition: 0.4s;box-shadow: 0 5px 20px rgba(0,0,0,0.60); transition: 0.4s; transform: translateZ(0); padding:0;">
+                    <a class="navbar-brand" href="#" id="mainLogoo" style="color:#425ad3; letter-spacing: 1.4px;
 word-spacing: 0.2px;">
                           <div class="">
                             <div class="row">
@@ -41,7 +41,7 @@ word-spacing: 0.2px;">
                                 </div>
                                 <div class="col container-fluid d-flex justify-content-center align-items-center" style="margin-left:15px;">
                                     <div class="text-container">
-                                        <div class="text-center text-logomain">Xiaomi Powered by Dhruv Varia</div>
+                                        <div class="text-center">Xiaomi Powered by Dhruv Varia</div>
                                     </div>
 
                                 </div>
@@ -58,10 +58,10 @@ word-spacing: 0.2px;">
                     <div class="collapse navbar-collapse" id="navbarSupportedContent" style="text-align: center;">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item popup nav_fly_left">
-                                <a class="nav-link navclass_display " href="#section1">Home</a>
+                                <a class="nav-link navclass_display linkbtn" id="lb1" ID="lb1" style="color:black;" href="#section1">Home</a>
                             </li>
                             <li class="nav-item popup nav_fly_left">
-                                <a class="nav-link navclass_display " href="#section2">About Us</a>
+                                <a class="nav-link navclass_display linkbtn" id="lb2" style="color:black;" href="#section2">About Us</a>
                             </li>
                             
     
@@ -69,13 +69,13 @@ word-spacing: 0.2px;">
     
                         <ul class="navbar-nav">
                             <li class="nav-item  nav-link  nav_fly navclass_display">
-                                <div  class="notranslate" align="center" style="transition: 0.8s; font-family: 'Comic Sans MS'">
+                                <div  class="notranslate linkbtn" align="center" id="lb3" style="transition: 0.8s; font-family: 'Comic Sans MS'; color:black;">
                                 Contact Us
                                 </div>
                             </li>
     
-                            <li class="nav-item  popup  nav_fly navclass_display">
-                                <a class="nav-link navclass_display" ID="btn_user" runat="server" >Welcome 🙏</a>
+                            <li class="nav-item  popup  nav_fly navclass_display linkbtn">
+                                <a class="nav-link navclass_display" id="lb4" runat="server"  style="color:black;">Welcome 🙏</a>
     
                             </li>
                         </ul>
@@ -87,67 +87,153 @@ word-spacing: 0.2px;">
         <img src="assets/imgs/pad_main_image.jpg" style="height: 100vh;">
         
         <div class="" id="section2">
-            <div class="video-containerr">
-                <video autoplay muted loop id="myVideoo">
-                    <source src="assets/imgs/bg_intro.mp4" type="video/mp4">
+            <div class="overlay_transistion" style="margin:0; padding:0; background: rgb(0,0,0);
+            background: -moz-linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+            background: -webkit-linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+            background: linear-gradient(180deg, rgba(0,0,0,0) 45%, rgba(0,0,0,1) 100%); z-index: 99;" >
+                <div class="video-containerr" >
+                    <video autoplay muted loop id="myVideoo" style="z-index: -1;">
+                        <source src="assets/imgs/bg_intro.mp4" type="video/mp4">
+                        
+                        Your browser does not support HTML5 video.
+                    </video>
                     
-                    Your browser does not support HTML5 video.
-                </video>
-                
-                <div class="container-fluid" style="margin-top: 80px;">
-                    <div class="row">
-                        <div class="col-md-8 mx-auto">
-                            <div class="row">
-                                <div class="col d-flex align-items-lg-start">
-                                    <h4>Introducing</h4>
-                                </div>
-                            </div>
-            
-                            <div class="row">
-                                <div class="col">
-                                    <h2>Xiaomi Pad 6</h2>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="row ">
-                    <div class="col" style="min-height: 100vh; margin-top: 20px; margin-bottom: 100px;">
-                        <div class="row ">
-                            <div class="col container-fluid  justify-content-center align-items-center">
+                    <div class="container-fluid" style="margin-top: 80px;">
+                        <div class="row">
+                            <div class="col-md-8 mx-auto">
                                 <div class="row">
                                     <div class="col d-flex align-items-lg-start">
-                                        <h4>Introducing</h4>
+                                        <h4 style="color:#3a4eae;">Introducing</h4>
                                     </div>
                                 </div>
                 
                                 <div class="row">
                                     <div class="col">
-                                        <h1>Xiaomi Pad 6</h2>
+                                        <h1 style="font-weight: lighter;">Xiaomi Pad 6 2023</h1>
                                     </div>
                                 </div>
-                
-                                <div class="row">
+                                <div class="row mt-5">
+                                    <div class="col-md-6">
+                                        <img src="assets/imgs/sd870.png" class="img-fluid" style="max-width: 250px;">
+                                    </div>
+                                    <div class="col-md-6 ">
+    
+                                        <div class="row d-flex justify-content-center align-items-center">
+                                            <div class="col">
+                                                <p class="text-center"><p style="color:red; font-weight: lighter;">New</p> 5nm Powerful and Efficient</p>
+                                            </div>
+                                        </div>
+                                        <div class="row d-flex justify-content-center align-items-center">
+                                            <div class="col">
+                                                <p style="font-size: 3rem; font-family: Arial, Helvetica, sans-serif;">Snapdragon 870 Processor</p>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                    </div>
+                                </div>
+                                <div class="row" style="margin-top:125px;">
                                     <div class="col">
-                                        <!-- Xiaomi Pad 6 content here -->
-                                        <h3>Features and Specifications</h3>
-                                        <p>The Xiaomi Pad 6 comes with a stunning display, powerful processor, and advanced features that...</p>
+                                        <p style="font-size: 3rem; font-family: Arial, Helvetica, sans-serif; color: #333333;">Metal Lightweight Body </p>
                                     </div>
                                 </div>
+                                
+                                <div class="row mt-5" style="padding-bottom: 80px;">
+                                        <img src="assets/imgs/metalFrame.webp" class="img-fluid">
+                                        
+                                 
+                                </div>
+                                
                             </div>
                         </div>
                     </div>
+        
+    
                 </div>
-                
+            </div>
+            
+            
+        </div>
 
-
-
+        <div class="" style="background-color: black; color:white;">
+            <div class="row">
+                <div class="col-md-6 mx-auto d-flex justify-content-end align-content-end" style="text-align: end;">
+                    <p><span style=" font-size: 3rem; font-family: Arial, Helvetica, sans-serif; font-weight: bolder; color:#ff5600;">2.8</span><span style="font-weight:lighter;  font-size: 3rem; font-family: Arial, Helvetica, sans-serif;color:#ff5600;">K</span><br><span style="font-size:1.5rem;">Clear</span></p>
+                </div>
+                <div class="col-md-6 mx-auto d-flex justify-content-start align-content-start" style="text-align: start;">
+                   <p><span style=" font-size: 3rem; font-family: Arial, Helvetica, sans-serif; font-weight: bolder; color:#468fff;">144</span><span style="font-weight: lighter;  font-size: 3rem; font-family: Arial, Helvetica, sans-serif; color:#468fff;">hz</span><br><span style="font-size:1.5rem;">Smooooooooth</span></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col mx-auto">
+                    <img src="assets/imgs/display.webp" class="img-fluid" style="">
+                </div>  
+            </div>  
+            <div class="row">
+                <div class="col mx-auto d-flex justify-content-center align-content-center">
+                    <img src="assets/imgs/dolby.webp" class="img-fluid" style="max-width: 300px;">
+                </div>
             </div>
         </div>
-    </div>
         
 
+        <div id="section3" style="background-color: black; color: white;">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-8 mx-auto d-flex justify-content-center align-content-center pt-3" style="text-align: center;">
+                        <p style="font-size: 1.5rem; font-family: Arial, Helvetica, sans-serif;">With a <b>2.8K resolution</b>, all your favourite sitcoms <br>and movies are crisp and clear.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 mx-auto" style="text-align: center;">
+                        <p class="pt-4" style="font-size: 1.5rem; font-family: Arial, Helvetica, sans-serif;">The <b>144Hz 7-Stage AdaptiveSync Refresh Rate </b><br>caters the refresh rate according to the content you are watching, thus increasing your battery efficiency.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="" style="background-color: black; color:white;">
+            <div class="row">
+                <div class="col mx-auto">
+                    <img src="assets/imgs/battery.webp" class="img-fluid" style="">
+                </div>  
+            </div>  
+        </div>
+        <div id="section3" style="background-color: black; color: white;">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-8 mx-auto d-flex justify-content-center align-content-center" style="text-align: center;">
+                        <p style="font-size: 1.5rem; font-family: Arial, Helvetica, sans-serif;">Hit all your targets - at work and play with an <b>8840mAh battery</b><br>that can last up to 2.07 days and up to 26+ days4on standby.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container-fluid pt-5" style="background-color: black; color:white;">
+            <div class="row">
+                <div class="col-md-8 mx-auto d-flex justify-content-start align-content-start" style="text-align: start;">
+                    <p><span style="font-weight:lighter; font-size: 3.5rem; font-family: Arial, Helvetica, sans-serif; font-weight: bolder; color:#ffffff;">Your Personal</span><br>
+                    <span style=" font-size: 3.5rem; font-family: Arial, Helvetica, sans-serif; font-weight: bolder; color:#0db2cf;">
+                        Theatre<br>Experience
+                    </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="" style="background-color: black; color:white;">
+            <div class="row">
+                <div class="col mx-auto">
+                    <img src="assets/imgs/speakerss.webp" class="img-fluid" style="">
+                </div>  
+            </div>  
+        </div>
+       
+    </div>
+        
+    
 
     </body>
 </html>
